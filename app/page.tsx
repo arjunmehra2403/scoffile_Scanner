@@ -15,9 +15,6 @@ export default function HomePage() {
           <span className="h-2 w-2 rounded-full bg-emerald-600" />
           100% Veg
         </span>
-
-
-
         <p className="mt-8 max-w-[26ch] font-body text-base text-ink-soft">What would you like to do?</p>
 
         <div className="mt-5 flex w-full flex-col gap-4">
