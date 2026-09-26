@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-cream text-ink font-body antialiased; }
+  h1, h2, h3, h4 { @apply font-display; }
+  ::selection { @apply bg-bloom-300 text-ink; }
+}
+
+@layer utilities {
+  .container-page { @apply mx-auto w-full max-w-md px-5; }
+  .focus-ring { @apply outline-none focus-visible:ring-2 focus-visible:ring-bloom-500 focus-visible:ring-offset-2 focus-visible:ring-offset-cream; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
