@@ -8,8 +8,6 @@ export default function HomePage() {
     <main className="min-h-dvh bg-gradient-to-b from-bloom-100 via-cream to-cream px-5 pb-10 pt-12">
       <div className="container-page flex flex-col items-center text-center">
         <Logo size={64} />
-
-
         <h1 className="mt-4 font-display text-4xl font-semibold tracking-tight text-ink">{restaurant.name}</h1>
         <p className="mt-1 text-sm font-medium uppercase tracking-wide text-bloom-500">{restaurant.tagline}</p>
 
